@@ -3,4 +3,23 @@
       {{title}}
     </h1>
 </md-toolbar>
-<h2>My Online Store</h2>
+<nav md-tab-nav-bar>
+  <a md-tab-link routerLink="/products"
+     routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    Products
+  </a>
+  <a md-tab-link routerLink="/cart"
+     routerLinkActive #rlb="routerLinkActive" [active]="rlb.isActive">
+    Cart
+  </a>
+    <a md-tab-link routerLink="/order"
+     routerLinkActive #rlc="routerLinkActive" [active]="rlc.isActive">
+    Order
+  </a>
+  <a md-tab-link routerLink="/customers"
+     routerLinkActive #rld="routerLinkActive" [active]="rld.isActive">
+    Customers
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
