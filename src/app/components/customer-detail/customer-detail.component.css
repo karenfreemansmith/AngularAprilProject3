@@ -1,0 +1,12 @@
+div h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div {
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    width: 20%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}

@@ -8,12 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var CustomerDetailComponent = (function () {
     function CustomerDetailComponent() {
+        this.customerName = "My Name";
+        this.customerAddress = "123 Main St";
     }
     CustomerDetailComponent.prototype.ngOnInit = function () {
     };
     CustomerDetailComponent = __decorate([
         core_1.Component({
             selector: 'app-customer-detail',
+            inputs: ["customerName", "customerAddress", "customerCity", "customerState", "customerPhone"],
             templateUrl: './customer-detail.component.html',
             styleUrls: ['./customer-detail.component.css']
         })
